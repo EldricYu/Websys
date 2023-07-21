@@ -1,0 +1,178 @@
+*, *::before, *::after {
+        margin: 4;
+        font-family: 'Roboto', sans-serif;
+
+  }
+
+.appointment-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    padding: 10px;
+    font-size: large;
+  }
+  .field
+  {
+    padding:10px;
+    width: 300;
+    text-align: left;
+    display: inline-block
+  }
+  header {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    border-bottom: 10px solid #FFDB7D;
+}
+
+  button {
+    margin: 1rem;
+  }
+  
+  .btn {
+    font-size: 15px;
+    background-color: var(--background-color);
+    color: #222;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    --background-color: #e3e3e3;
+    --border-size: 2px;
+    --accent-color: #FFDB7D;
+  }
+
+  
+  .btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .btn.btn-background-slide:hover::before,
+  .btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+  }
+  
+  .btn.btn-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .btn.btn-background-slide:hover,
+  .btn.btn-background-slide:focus {
+    color: white;
+  }
+
+
+
+h2
+{
+  text-align: center;
+}
+.btn1 {
+  padding: 8px 22px;
+  background: green;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: verdana;
+  width: 125px;
+  height: 40px;
+  border-radius: 6px;
+  left: 50px;
+  bottom: 125px;
+  align-items: right;
+  position: relative;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+}
+.btn1 .btn2 .btn3
+{
+  transform: scale(0.96);
+}
+
+.btn2 {
+  padding: 8px 22px;
+  background: rgb(128, 0, 0);
+  outline: none;
+  border: none;
+  color: white;
+  font-family: verdana;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  align-items: right;
+  position: relative;
+  left: 670px;
+  bottom: 125px;
+  transition: all 0.2s ease;
+}
+
+.btn3 {
+  padding: 8px 22px;
+  background: #FFDB7D;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: verdana;
+  width: 125px;
+  height: 40px;
+  border-radius: 5px;
+  align-items: right;
+  position: relative;
+  left: 509px;
+  bottom: 55px;
+  transition: all 0.2s ease;
+}
+.box2 {
+  position: relative;
+  display: inline-block;
+  width: 850px;
+  left: 50px;
+}
+
+.box1 {
+  position: absolute;
+  display: inline-block;
+  left: 1000px;
+  width: 865px;
+}
+
+.container {
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.text{
+  outline: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  width:70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.text1{
+  max-width: 100px;
+  max-height: 50px;
+}
